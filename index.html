@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nicolas Muniz — Desenvolvedor & Estudante de ADS</title>
+  <meta name="description" content="Portfólio de Nicolas Gabriel de Oliveira Muniz, estudante de Análise e Desenvolvimento de Sistemas. Projetos em desenvolvimento web, back-end, APIs e banco de dados.">
+  <meta name="keywords" content="Nicolas Muniz, desenvolvedor, portfólio, ADS, análise e desenvolvimento de sistemas, programador, full-stack, react, node.js">
+  <meta name="author" content="Nicolas Gabriel de Oliveira Muniz">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nicolasmuniz.dev/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nicolas Muniz — Desenvolvedor & Estudante de ADS">
+  <meta property="og:description" content="Transformando ideias em soluções através da tecnologia. Confira projetos, habilidades e trajetória de Nicolas Muniz.">
+  <meta property="og:image" content="assets/og-cover.svg">
+  <meta property="og:url" content="https://nicolasmuniz.dev/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Nicolas Muniz — Portfólio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nicolas Muniz — Desenvolvedor & Estudante de ADS">
+  <meta name="twitter:description" content="Transformando ideias em soluções através da tecnologia.">
+  <meta name="twitter:image" content="assets/og-cover.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicolas Gabriel de Oliveira Muniz",
+    "jobTitle": "Estudante de Análise e Desenvolvimento de Sistemas",
+    "email": "mailto:nicolasgomuniz@gmail.com",
+    "telephone": "+5581999500318",
+    "url": "https://nicolasmuniz.dev/",
+    "sameAs": ["https://github.com/nicolasgabrielmuniz"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-bracket">&lt;</span>
+      <span class="loader-name">NM</span>
+      <span class="loader-bracket">/&gt;</span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Background particles -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <a class="skip-link" href="#home">Pular para o conteúdo</a>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>Nicolas<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#timeline" class="nav-link">Trajetória</a></li>
+        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#github" class="nav-link">GitHub</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contato" class="btn btn-small btn-primary nav-cta">Contato</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-text reveal-up">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Disponível para novos projetos</p>
+          <h1 class="hero-title">
+            Olá, eu sou <span class="gradient-text">Nicolas Muniz</span>
+          </h1>
+          <p class="hero-subtitle">Estudante de Análise e Desenvolvimento de Sistemas</p>
+          <p class="hero-tagline">"Transformando ideias em soluções através da tecnologia."</p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i> Ver Projetos
+            </a>
+            <a href="#contato" class="btn btn-ghost">
+              <i class="fa-solid fa-paper-plane"></i> Contato
+            </a>
+            <a href="https://github.com/nicolasgabrielmuniz" target="_blank" rel="noopener" class="btn btn-icon" aria-label="GitHub de Nicolas Muniz">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+
+          <div class="hero-scroll" aria-hidden="true">
+            <span>Role para explorar</span>
+            <div class="hero-scroll-line"><div class="hero-scroll-dot"></div></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-up delay-2">
+          <div class="avatar-orbit">
+            <div class="avatar-ring"></div>
+            <div class="avatar-frame">
+              <div class="avatar-tech">NM</div>
+            </div>
+            <i class="fa-brands fa-html5 orbit-icon icon-1"></i>
+            <i class="fa-brands fa-react orbit-icon icon-2"></i>
+            <i class="fa-brands fa-node-js orbit-icon icon-3"></i>
+            <i class="fa-brands fa-python orbit-icon icon-4"></i>
+            <i class="fa-solid fa-database orbit-icon icon-5"></i>
+            <i class="fa-brands fa-git-alt orbit-icon icon-6"></i>
+          </div>
+
+          <div class="code-card glass">
+            <div class="code-card-header">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="code-card-title">sobre-mim.js</span>
+            </div>
+            <pre class="code-card-body"><code><span class="tok-key">const</span> <span class="tok-var">dev</span> = {
+  <span class="tok-prop">nome</span>: <span class="tok-str">"Nicolas Muniz"</span>,
+  <span class="tok-prop">curso</span>: <span class="tok-str">"ADS"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"JS"</span>, <span class="tok-str">"React"</span>, <span class="tok-str">"Node"</span>],
+  <span class="tok-prop">aprendendo</span>: <span class="tok-bool">true</span>,
+};<span class="typing-cursor">|</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-eyebrow">Sobre mim</p>
+          <h2 class="section-title">Quem é Nicolas?</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal-up">
+            <p>
+              Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por
+              tecnologia e pela forma como o código pode transformar problemas reais em soluções
+              simples e eficientes. Gosto de entender o funcionamento das coisas de ponta a ponta —
+              da interface que o usuário toca até o banco de dados que sustenta tudo por trás.
+            </p>
+            <p>
+              Tenho interesse especial em <strong>desenvolvimento web</strong>, <strong>back-end</strong>
+              e <strong>front-end</strong>, além de estudar constantemente <strong>banco de dados</strong>,
+              <strong> APIs</strong>, <strong>inteligência artificial</strong> e <strong>cloud computing</strong>.
+              Encaro cada projeto como uma oportunidade de aprender algo novo e sair da zona de conforto.
+            </p>
+            <p>
+              Busco unir teoria e prática: enquanto estudo os fundamentos de
+              <strong> desenvolvimento de software</strong>, também coloco a mão no código para construir
+              projetos reais, testar ideias e evoluir como desenvolvedor a cada linha escrita.
+            </p>
+
+            <div class="about-tags">
+              <span class="tag">Desenvolvimento Web</span>
+              <span class="tag">Back-end</span>
+              <span class="tag">Front-end</span>
+              <span class="tag">Banco de Dados</span>
+              <span class="tag">APIs</span>
+              <span class="tag">Inteligência Artificial</span>
+              <span class="tag">Cloud Computing</span>
+              <span class="tag">Dev. de Software</span>
+            </div>
+          </div>
+
+          <div class="about-card glass reveal-up delay-2">
+            <div class="about-card-row">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <span class="about-card-label">Formação</span>
+                <span class="about-card-value">Análise e Desenvolvimento de Sistemas</span>
+              </div>
+            </div>
+            <div class="about-card-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="about-card-label">Localização</span>
+                <span class="about-card-value">Pernambuco, Brasil</span>
+              </div>
+            </div>
+            <div class="about-card-row">
+              <i class="fa-solid fa-bullseye"></i>
+              <div>
+                <span class="about-card-label">Objetivo</span>
+                <span class="about-card-value">Atuar como Desenvolvedor Full-Stack</span>
+              </div>
+            </div>
+            <div class="about-card-row">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <span class="about-card-label">Diferencial</span>
+                <span class="about-card-value">Aprendizado contínuo e resolução de problemas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section section-alt" id="habilidades">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-eyebrow">Habilidades</p>
+          <h2 class="section-title">Tecnologias & Ferramentas</h2>
+          <p class="section-desc">Um panorama das linguagens, frameworks e ferramentas que venho estudando e aplicando em projetos.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- populated by JS from data, but rendered statically for no-JS fallback below -->
+        </div>
+        <noscript>
+          <p class="about-text">Ative o JavaScript para visualizar as barras de habilidade animadas.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-eyebrow">Projetos</p>
+          <h2 class="section-title">O que já construí</h2>
+          <p class="section-desc">Uma seleção de projetos autorais e de estudo. Os cards abaixo são carregados automaticamente a partir do meu GitHub — quando não há repositório correspondente, uso um projeto conceito para ilustrar a ideia.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section section-alt" id="timeline">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-eyebrow">Trajetória</p>
+          <h2 class="section-title">Linha do Tempo</h2>
+          <p class="section-desc">Da primeira linha de código ao objetivo profissional.</p>
+        </div>
+
+        <div class="timeline" id="timelineList">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-eyebrow">Serviços</p>
+          <h2 class="section-title">Como posso ajudar</h2>
+          <p class="section-desc">Soluções sob medida para transformar uma necessidade em um sistema funcional.</p>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+    <section class="section stats-section" id="estatisticas">
+      <div class="container">
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat-card glass">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span class="stat-number" data-target="8" id="statProjects">0</span>
+            <span class="stat-label">Projetos desenvolvidos</span>
+          </div>
+          <div class="stat-card glass">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="stat-number" data-target="15" id="statTech">0</span>
+            <span class="stat-label">Tecnologias estudadas</span>
+          </div>
+          <div class="stat-card glass">
+            <i class="fa-solid fa-code-commit"></i>
+            <span class="stat-number" data-target="0" id="statCommits">0</span>
+            <span class="stat-label">Commits públicos</span>
+          </div>
+          <div class="stat-card glass">
+            <i class="fa-brands fa-github"></i>
+            <span class="stat-number" data-target="0" id="statRepos">0</span>
+            <span class="stat-label">Repositórios</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section class="section section-alt" id="github">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-eyebrow">GitHub</p>
+          <h2 class="section-title">Direto do meu perfil</h2>
+          <p class="section-desc">Dados carregados em tempo real através da API pública do GitHub.</p>
+        </div>
+
+        <div class="github-panel glass" id="githubPanel">
+          <div class="github-loading" id="githubLoading">
+            <span class="spinner"></span> Carregando dados do GitHub…
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-eyebrow">Contato</p>
+          <h2 class="section-title">Vamos conversar</h2>
+          <p class="section-desc">Está com um projeto em mente ou quer trocar uma ideia sobre tecnologia? Fico à disposição.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-up">
+            <a class="contact-item glass" href="tel:+5581999500318">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span class="contact-label">Telefone</span>
+                <span class="contact-value">(81) 9 9950-0318</span>
+              </div>
+            </a>
+            <a class="contact-item glass" href="mailto:nicolasgomuniz@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="contact-label">E-mail</span>
+                <span class="contact-value">nicolasgomuniz@gmail.com</span>
+              </div>
+            </a>
+            <a class="contact-item glass" href="https://github.com/nicolasgabrielmuniz" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/nicolasgabrielmuniz</span>
+              </div>
+            </a>
+          </div>
+
+          <form class="contact-form glass reveal-up delay-2" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" placeholder="Sobre o que é?" required>
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span class="btn-text">Enviar mensagem</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>Nicolas<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Transformando ideias em soluções através da tecnologia.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/nicolasgabrielmuniz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:nicolasgomuniz@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+5581999500318" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Nicolas Gabriel de Oliveira Muniz &copy; 2026</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
